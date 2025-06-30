@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Academic Profile"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
@@ -10,5 +10,16 @@ redirect_from:
 <!-- Insert image -->
 <!-- ![Editing a markdown file for a talk](/images/editing-talk.png) -->
 
-I'll update this page when I have more papers.
+Research Interests
+------
+* Granger Causal Discovery
+* Brain Dynamic Effective Connectivity
+* Biosignal Processing
 
+
+
+Selected Recent Works
+------
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>

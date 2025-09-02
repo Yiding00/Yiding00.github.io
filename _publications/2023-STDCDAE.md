@@ -3,7 +3,7 @@ title: "A Deep Spatio-Temporal Architecture for Dynamic ECN Analysis with Grange
 collection: publications
 link:  'https://doi.org/10.1016/j.patcog.2025.112346'
 # code: 'https://github.com/Yiding00/TRDCDL'
-permalink: /publication/2023-STDCDAE
+permalink: /publication/STDCDAE
 date: 2023-10-26
 venue: 'Pattern Recognition'
 authors: Faming Xu (co-first author), <b>Yiding Wang (co-first author)</b>, Gang Qu, Vince D. Calhoun, Julia M. Stephen, Tony W. Wilson, Yu-Ping Wang, Chen Qiao

@@ -10,8 +10,9 @@
   }
 
   @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
+    @include span(12 of 12);
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   a {
@@ -41,10 +42,13 @@
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
+  font-family: $sans-serif;
+  font-weight: 500;
 
   a + a {
     opacity: 0.5;
+    margin-left: 6px;
+    font-size: 0.75em;
   }
 }
 
@@ -60,6 +64,7 @@
 .archive__item-excerpt {
   margin-top: 0;
   font-size: $type-size-6;
+  color: $gray;
 
   & + p {
     text-indent: 0;
@@ -74,13 +79,43 @@
   }
 }
 
+.publication-links {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+
+  a {
+    font-size: $type-size-6;
+    color: $gray;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 10px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    text-decoration: none;
+    transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+
+    &:hover {
+      color: $primary-color;
+      border-color: $primary-color;
+      background: mix(#fff, $primary-color, 95%);
+    }
+
+    i {
+      font-size: 0.9em;
+    }
+  }
+}
+
 .archive__item:hover {
   .archive__item-teaser {
     box-shadow: 0 0 10px rgba(#000, 0.25);
   }
 
-  .archive__item-title {
-    text-decoration: underline;
+  .archive__item-title a {
+    color: $primary-color;
   }
 }
 

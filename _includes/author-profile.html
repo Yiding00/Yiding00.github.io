@@ -16,12 +16,20 @@
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
+  <div class="author__interests author__desktop">
+    <h4>Research Interests</h4>
+    <span class="interest-badge">Causal Discovery</span>
+    <span class="interest-badge">Brain Connectivity</span>
+    <span class="interest-badge">Dynamic ECN</span>
+    <span class="interest-badge">Machine Learning</span>
+    <span class="interest-badge">fMRI Analysis</span>
+  </div>
+
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
+    <button class="btn btn--inverse">Links</button>
     <ul class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}

@@ -7,6 +7,7 @@ permalink: /publication/STDCDAE
 date: 2023-10-26
 venue: 'Pattern Recognition'
 authors: Faming Xu (co-first author), <b>Yiding Wang (co-first author)</b>, Gang Qu, Vince D. Calhoun, Julia M. Stephen, Tony W. Wilson, Yu-Ping Wang, Chen Qiao
+excerpt: 'A deep spatio-temporal fusion architecture for dynamic causal discovery, revealing the evolution of directed brain functional networks from fluctuating undifferentiated systems to stable specialized networks.'
 # pubinfo: 
 revinfo: 172 (2026) 112346.
 ---

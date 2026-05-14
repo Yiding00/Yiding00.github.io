@@ -4,7 +4,7 @@
 
 .masthead {
   position: fixed;
-  background: white;
+  background: #fff;
   border-bottom: 1px solid $border-color;
   height: $masthead-height;
   top: 0;
@@ -15,12 +15,13 @@
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
   z-index: 20;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 
   &__inner-wrap {
     @include container;
     @include clearfix;
     padding: 1em 1em 1em;
-    font-family: $sans-serif-narrow;
+    font-family: $sans-serif;
 
     @include breakpoint($x-large) {
       max-width: $x-large;

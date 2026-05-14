@@ -38,7 +38,7 @@
 
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
-    font-family: $sans-serif-narrow;
+    font-family: $sans-serif;
   }
 
   h3, h4 {
@@ -80,13 +80,12 @@
   display: table-cell;
   vertical-align: top;
   width: 36px;
-  // set width only, for non-square avatars
-  // height: 36px;
 
   @include breakpoint($large) {
     display: block;
     width: auto;
     height: auto;
+    text-align: center;
   }
 
   img {
@@ -94,8 +93,9 @@
     border-radius: 50%;
 
     @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
+      padding: 4px;
+      border: 2px solid $border-color;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
   }
 }
@@ -126,6 +126,9 @@
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
+  font-weight: 600;
+  color: $dark-gray;
+  text-align: center;
 }
 
 .sidebar .author__desktop {
@@ -146,6 +149,7 @@
 
 .author__bio {
   margin: 0;
+  color: $gray;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -255,6 +259,40 @@
 
     &:hover {
       text-decoration: underline;
+      color: $primary-color;
     }
+  }
+}
+
+/*
+   Research interests badges (Google Scholar style)
+   ========================================================================== */
+
+.interest-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 2px 3px;
+  font-size: 0.82em;
+  color: $primary-color;
+  background: mix(#fff, $primary-color, 94%);
+  border: 1px solid mix(#fff, $primary-color, 85%);
+  border-radius: 12px;
+  white-space: nowrap;
+  font-family: $sans-serif;
+}
+
+.author__interests {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid $border-color;
+  text-align: center;
+
+  h4 {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $gray;
+    margin: 0 0 8px;
+    font-weight: 600;
   }
 }

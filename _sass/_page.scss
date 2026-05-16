@@ -285,6 +285,69 @@
   @include full();
 }
 
+/*
+   Research interests badges (Google Scholar style)
+   ========================================================================== */
+
+.interest-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 2px 3px;
+  font-size: 0.82em;
+  color: $primary-color;
+  background: mix(#fff, $primary-color, 94%);
+  border: 1px solid mix(#fff, $primary-color, 85%);
+  border-radius: 12px;
+  white-space: nowrap;
+  font-family: $sans-serif;
+}
+
+.homepage-profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.homepage-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid $border-color;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.homepage-name {
+  margin: 0 0 4px;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: $dark-gray;
+}
+
+.homepage-bio {
+  color: $gray;
+  margin: 0;
+}
+
+.homepage-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+
+  a {
+    color: $gray;
+    font-size: 0.85em;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
 .page__comments-title {
   margin-top: 2rem;
   margin-bottom: 10px;

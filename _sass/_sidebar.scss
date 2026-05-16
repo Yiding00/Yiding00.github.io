@@ -264,23 +264,6 @@
   }
 }
 
-/*
-   Research interests badges (Google Scholar style)
-   ========================================================================== */
-
-.interest-badge {
-  display: inline-block;
-  padding: 3px 10px;
-  margin: 2px 3px;
-  font-size: 0.82em;
-  color: $primary-color;
-  background: mix(#fff, $primary-color, 94%);
-  border: 1px solid mix(#fff, $primary-color, 85%);
-  border-radius: 12px;
-  white-space: nowrap;
-  font-family: $sans-serif;
-}
-
 .author__interests {
   margin-top: 16px;
   padding-top: 12px;

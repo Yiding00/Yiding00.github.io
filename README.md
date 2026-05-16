@@ -1,17 +1,10 @@
-# Yiding Wang's Personal Homepage
+# Personal Academic Homepage
 
-Personal academic homepage for Yiding Wang, Ph.D. student at Xi'an Jiaotong University.
+A clean single-page academic homepage built with Jekyll.
 
 ## About
 
-This site is built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/). It is based on the [Academic Pages](https://academicpages.github.io/) template, with a clean single-page design.
-
-## Research Interests
-
-- Causal Discovery
-- Brain Effective Connectivity
-- Identifiability
-- Continuous-Time Modeling
+This site is built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/). It is based on the [Academic Pages](https://academicpages.github.io/) template.
 
 ## Site Structure
 
